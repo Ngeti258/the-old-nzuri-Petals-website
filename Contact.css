@@ -1,0 +1,11 @@
+body{
+    margin: 10%;
+    font-size: 1.5rem;
+    color: darkslategray;
+    display: inline block;
+
+}
+a{
+    align-items: center;
+    text-decoration: none;
+}

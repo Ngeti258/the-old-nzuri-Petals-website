@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background:linear-gradient(to right,brown,grey);
+    overflow:hidden
+    ;
+
+}
+.container{
+    text-align: center;
+    position: relative;
+   /* top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;*/
+}
+.container span{
+    text-transform: uppercase;
+    display: block;
+    position:relative;
+}
+
+a{
+    text-decoration: none;
+    color: orange;
+}
+.badge{
+  padding-top: 2.5%;
+   margin-bottom: 20px;
+   transition: 3.5s;
+  transform: translateY(-50%);
+
+}
+.badge_header{
+  position: relative;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%);
+  border: black;
+    height: 160px;
+    width: 150px;
+    background: gray;
+    border-radius: 200px 200px 0 0;
+    transform: rotate(180deg);
+
+
+}
+.material_sun{
+   border-radius: 50%;
+   color: yellow;
+
+}
+.text1{
+    color: yellow;
+    font-size: 60px;
+  /*  width: 100%;*/
+    font-weight: 700;
+    letter-spacing: 8px;
+  /*  margin-bottom: 20px;
+    position: relative;*/
+  animation: text 4s 1;
+
+   transition: 3.5s;
+  transform: translateY(5%);
+ 
+
+}
+.home {
+  
+    font-size: 30px;
+    margin-bottom: -20px;
+    transition: 2s;
+  transform: translateY(150%);
+}
+  .about{
+    font-size: 30px;
+    margin-bottom: -30px;
+    transition: 2s;
+  transform: translateY(350%);
+}
+.howtoenroll{
+    font-size: 30px;
+    margin-bottom: -40px;
+    transition: 2s;
+  transform: translateY(550%);
+
+}
+.contact{
+  font-size: 30px;
+  margin-bottom: -50px;
+  transition: 2s;
+transform: translateY(780%);
+}
+
+@keyframes text{
+    0%{
+      opacity: 0;
+        margin-bottom: -40px;
+    }
+    30%{
+      opacity: 0;
+       ;
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+    }
+    85%{
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+    }
+ 
+}

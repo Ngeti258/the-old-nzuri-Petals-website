@@ -1,0 +1,22 @@
+body{
+    margin: 10%;
+    font-size: 3.5rem;
+    color: darkmagenta;
+    display: block;
+
+}
+a{
+    color: darkorange;
+    text-align: center;
+}
+.badge{
+    width: 300px;
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+h1{
+    text-align: center;
+}

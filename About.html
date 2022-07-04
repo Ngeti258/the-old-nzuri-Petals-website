@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nzuri Petals Academy/About</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <link rel="stylesheet" href="about.css">
+    <style>
+        .ribbon{
+              font-size: 12px;
+              word-spacing: 10px;
+              letter-spacing: 2px;
+              width: 300px;
+              position: relative;
+              top: 240px;
+              right:  80px;
+              background: darkslateblue;
+              color: #fff;
+              text-align:center ;
+              padding: 1em 2em;
+              margin: 2em auto 3em;
+              transform: rotate(180deg);
+  
+          }
+          .ribbon:after,
+          .ribbon:before{
+              content: '';
+              position:absolute;
+              display: block;
+              bottom: -1em;
+              border: 1.5em solid #d74545;
+              z-index: -1;
+          }
+          .ribbon:before{
+              left: -2em;
+              border-right-width: 1.5em;
+              border-left-color: transparent;
+  
+          }
+          .ribbon::after{
+              right: -2em;
+              border-left-width: 1.5em;
+              border-right-color: transparent;
+          }
+          .ribbon-content::before,.ribbon-content:after{
+              content: '';
+              position: absolute;
+              display: block;
+              border-style: solid;
+              border-color: #804f7e transparent;
+              bottom: -1em;
+              
+  
+          
+          }
+          .ribbon-content:before{
+              left: 0;
+              border-width: 1em 0 0 1em;
+  
+          }
+          .ribbon-content:after{
+             right: 0;
+               border-width: 1em 1em 0 0;
+          }
+      .heart{ 
+             
+          position: relative;
+          left: 45%;
+          height: 200px;
+          width: 180px;
+          top: -70px;
+          background: linear-gradient(to bottom,blue,grey);
+          border-radius: 200px 200px 0 0;
+          transform: rotate(180deg);
+          
+         }
+         .lower{
+              font-size: 12px;
+              word-spacing: 6px;
+              width: 350px;
+              position: relative;
+              right: 100px;
+              bottom: 250px;
+              background: darkslateblue;
+              color: #fff;
+              text-align:center ;
+              padding: 1em 2em;
+              margin: 2em auto 3em;
+              transform: rotate(180deg);
+  
+  
+  
+          }
+          .lower:after,
+          .lower:before{
+              content: '';
+              position:absolute;
+              display: block;
+              bottom: -1em;
+              border: 1.5em solid #d74545;
+              z-index: -1;
+          }
+          .lower:before{
+              left: -2em;
+              border-right-width: 1.5em;
+              border-left-color: transparent;
+  
+          }
+          .lower::after{
+              right: -2em;
+              border-left-width: 1.5em;
+              border-right-color: transparent;
+          }
+          .lower-content::before,.lower-content:after{
+              content: '';
+              position: absolute;
+              display: block;
+              border-style: solid;
+              border-color: #804f7e transparent;
+              bottom: -1em;
+              
+  
+          
+          }
+          .lower-content:before{
+              left: 0;
+              border-width: 1em 0 0 1em;
+  
+          }
+          .lower-content:after{
+              right: 0;
+              border-width: 1em 1em 0 0;
+          }
+          /* sun */
+      @-webkit-keyframes sunrolling {
+          0%   {-webkit-transform:rotate(0deg); -moz-transform:rotate(0deg); -o-transform:rotate(0deg); -ie-transform:rotate(0deg);transform:rotate(0deg); }
+          100% { -webkit-transform:rotate(180deg); -moz-transform:rotate(180deg); -o-transform:rotate(180deg); -ie-transform:rotate(180deg);transform:rotate(180deg); }
+      }
+      @-moz-keyframes sunrolling {
+          0%   {-webkit-transform:rotate(0deg); -moz-transform:rotate(0deg); -o-transform:rotate(0deg); -ie-transform:rotate(0deg);transform:rotate(0deg); }
+          100% { -webkit-transform:rotate(180deg); -moz-transform:rotate(180deg); -o-transform:rotate(180deg); -ie-transform:rotate(180deg);transform:rotate(180deg); }
+      }
+      @-ms-keyframes sunrolling {
+          0%   {-webkit-transform:rotate(0deg); -moz-transform:rotate(0deg); -o-transform:rotate(0deg); -ie-transform:rotate(0deg);transform:rotate(0deg); }
+          100% { -webkit-transform:rotate(180deg); -moz-transform:rotate(180deg); -o-transform:rotate(180deg); -ie-transform:rotate(180deg);transform:rotate(180deg); }
+      }
+      @keyframes sunrolling {
+          0%   {-webkit-transform:rotate(0deg); -moz-transform:rotate(0deg); -o-transform:rotate(0deg); -ie-transform:rotate(0deg);transform:rotate(0deg); }
+          100% { -webkit-transform:rotate(180deg); -moz-transform:rotate(180deg); -o-transform:rotate(180deg); -ie-transform:rotate(180deg);transform:rotate(180deg); }
+      }
+  
+      .sun {
+          float: left;
+          position: absolute;
+          top: 70px;
+          left: 100px;
+          margin: 30px;
+          width: 25px;
+          height: 25px;
+      }
+    
+      
+          
+          
+          
+          .sun-hlight {
+              position: absolute;
+              top: 0.6em;
+              right: 0.6em;
+              width: 0.35em;
+              height: 0.35em;
+              opacity: 0.8;
+              background: #fcf0a3;
+              -webkit-border-radius: 0.35em;
+              -moz-border-radius: 0.35em;
+              -ms-border-radius: 0.35em;
+              -o-border-radius: 0.35em;
+              border-radius: 0.35em;
+          }
+      .sun-anime {
+          width: 100%;
+          height: 100%;
+          -webkit-animation: sunrolling 30s infinite;
+          -moz-animation: sunrolling 30s infinite;
+          -ie-animation: sunrolling 30s infinite;
+          -o-animation: sunrolling 30s infinite;
+          animation: sunrolling 30s infinite;
+      }
+      .sun-ball {
+          width: 100%;
+          height: 100%;
+          -webkit-border-radius: 100%;
+          -moz-border-radius: 100%;
+          -ie-border-radius: 100%;
+          -o-border-radius: 100%;
+          border-radius: 100%;
+          background: #ffcf11;
+          background-image: -webkit-radial-gradient(circle, #ffdf05, #ffcf11); /* Chrome 10+, Saf5.1+ */
+          background-image: -moz-radial-gradient(circle, #ffdf05, #ffcf11);
+          background-image: -o-radial-gradient(circle, #ffdf05, #ffcf11);
+          background-image: -ie-radial-gradient(circle, #ffdf05, #ffcf11);
+          background-image: radial-gradient(circle, #ffdf05, #ffdf05);
+          -webkit-box-shadow: 0 0 100px #ffdf05;
+          -moz-box-shadow: 0 0 100px #ffdf05;
+          -ie-box-shadow: 0 0 100px #ffdf05;
+          -o-box-shadow: 0 0 100px #ffdf05;
+          box-shadow: 0 0 100px #ffdf05;
+      }
+      .sun-light {
+          position: absolute;
+          top: -30%;
+          left: 50%;
+          width: 2px;
+          height: 160%;
+      }
+      .sun-light b,
+      .sun-light s {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 12%;/* 100*30/100=18.75 */
+          background: #fed65b;
+      }
+      .sun-light s{
+          top: auto;
+          bottom: 0;
+      }
+      .sun-light:nth-child(10n+2) {
+          -webkit-transform:rotate(18deg);
+          -moz-transform:rotate(18deg);
+          -o-transform:rotate(18deg);
+          -ie-transform:rotate(18deg);
+          transform:rotate(18deg); 
+      }
+      .sun-light:nth-child(10n+3) {
+          -webkit-transform:rotate(36deg);
+          -moz-transform:rotate(36deg);
+          -o-transform:rotate(36deg);
+          -ie-transform:rotate(36deg);
+          transform:rotate(36deg);
+      }
+      .sun-light:nth-child(10n+4) {
+          -webkit-transform:rotate(54deg);
+          -moz-transform:rotate(54deg);
+          -o-transform:rotate(54deg);
+          -ie-transform:rotate(54deg);
+          transform:rotate(54deg);
+      }
+      .sun-light:nth-child(10n+5) {
+          -webkit-transform:rotate(72deg);
+          -moz-transform:rotate(72deg);
+          -o-transform:rotate(72deg);
+          -ie-transform:rotate(72deg);
+          transform:rotate(72deg);
+      }
+      .sun-light:nth-child(10n+6) {
+          -webkit-transform:rotate(90deg);
+          -moz-transform:rotate(90deg);
+          -o-transform:rotate(90deg);
+          -ie-transform:rotate(90deg);
+          transform:rotate(90deg);
+      }
+      .sun-light:nth-child(10n+7) {
+          -webkit-transform:rotate(108deg);
+          -moz-transform:rotate(108deg);
+          -o-transform:rotate(108deg);
+          -ie-transform:rotate(108deg);
+          transform:rotate(108deg);
+      }
+      .sun-light:nth-child(10n+8) {
+          -webkit-transform:rotate(126deg);
+          -moz-transform:rotate(126deg);
+          -o-transform:rotate(126deg);
+          -ie-transform:rotate(126deg);
+          transform:rotate(126deg);
+      }
+      .sun-light:nth-child(10n+9) {
+          -webkit-transform:rotate(144deg);
+          -moz-transform:rotate(144deg);
+          -o-transform:rotate(144deg);
+          -ie-transform:rotate(144deg);
+          transform:rotate(144deg);
+      }
+      .sun-light:nth-child(10n+10) {
+          -webkit-transform:rotate(162deg);
+          -moz-transform:rotate(162deg);
+          -o-transform:rotate(162deg);
+          -ie-transform:rotate(162deg);
+          transform:rotate(162deg);
+      }
+    .book {
+    position: absolute;
+    top: 30px ;
+    left: 50px;
+    margin: auto;
+    width: 20px;
+    height: 30px;
+    perspective: 70rem;
+  }
+  .cover {
+    background-color: #36354e;
+    transform: rotateY(0deg);
+    width: 20px;
+    height: 30px;
+  }
+  .page {
+    top: 0.25rem;
+    left: 0.25rem;
+    background-color: #e9e6c4;
+    transform: rotateY(0deg);
+    width: 20px;
+    height: 30px;
+    text-align: right;
+    font-size: 8px;
+    color: #777;
+    font-family: monospace;
+  }
+  .page::before, .page::after {
+    display: block;
+    border-top: 1px dashed rgba(0, 0, 0, 0.3);
+    content: "";
+    padding-bottom: 1rem;
+  }
+  .cover, .page {
+    position: absolute;
+    padding: 1rem;
+    transform-origin: 100% 0;
+    border-radius: 5px 0 0 5px;
+    box-shadow: inset 3px 0px 20px rgba(0, 0, 0, 0.2),
+      0px 0px 15px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+  }
+  .cover.turn {
+    animation: bookCover 3s forwards;
+  }
+  .page.turn {
+    animation: bookOpen 3s forwards;
+  }
+  .page:nth-of-type(1) {
+    animation-delay: 0.05s;
+  }
+  .page:nth-of-type(2) {
+    animation-delay: 0.33s
+  }
+  .page:nth-of-type(3) {
+    animation-delay: 0.66s;
+  }
+  .page:nth-of-type(4) {
+    animation: bookOpen150deg 3s forwards;
+    animation-delay: 0.99s;
+  }
+  .page:nth-of-type(5) {
+    animation: bookOpen30deg 3s forwards;
+    animation-delay: 1.2s;
+  }
+  .page:nth-of-type(6) {
+    animation: bookOpen55deg 3s forwards;
+    animation-delay: 1.25s;
+  }
+  @keyframes bookOpen {
+    30% { z-index: 999 }
+    100% {  transform: rotateY(180deg);
+      z-index: 999;}
+  }
+  @keyframes bookCover {
+    30% { z-index: 999 }
+    100% {  transform: rotateY(180deg);
+      z-index: 1;}
+  }
+  @keyframes bookOpen150deg {
+    30% { z-index: 999 }
+    100% {  transform: rotateY(150deg);
+      z-index: 999;}
+  }
+  @keyframes bookOpen55deg {
+    30% { z-index: 999 }
+    100% {  transform: rotateY(55deg);
+      z-index: 999;}
+  }
+  @keyframes bookOpen30deg {
+    50% { z-index: 999 }
+    100% {  transform: rotateY(30deg);
+      z-index: 999;}
+  }
+  .cartoon {
+    position: absolute;
+    top: 170px;
+    left: 30px;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+  }
+  
+  .cartoon div {
+    position: absolute;
+    box-sizing: border-box;
+  }
+  
+  .b {
+    border: 0.5vmin solid;
+  }
+  
+  .r {
+    border-radius: 100%;
+  }
+  
+  .hb::before,
+  .ha::after {
+    content: "";
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+  }
+  
+  /****/
+  .cartoon {
+    --body: #630;
+  }
+  
+  .antenna, 
+  .body {
+    width: 4%;
+    height: 4%;
+    background: var(--body);
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .body::before {
+    width: 60%;
+    height: 1000%;
+    background: var(--body);
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 50%;
+  }
+  
+  .body::after {
+    width: 150%;
+    height: 400%;
+    background: var(--body);
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 50%;
+  }
+  
+  .antenna {
+    box-shadow: 
+      -4.1vmin -9.1vmin 0 -1vmin var(--body),
+      4.1vmin -9.1vmin 0 -1vmin var(--body);
+  }
+  
+  .antenna::after,
+  .antenna::before {
+    width: 150%;
+    height: 350%;
+    border-radius: 50%;
+    left: 80%;
+    bottom: 20%;
+    border: 0.25vmin solid transparent;
+    border-left: 0.5vmin solid var(--body);
+    transform: rotate(20deg);
+  }
+  
+  .antenna::after {
+    border-left: 0.5vmin solid transparent;
+    border-right: 0.5vmin solid var(--body);
+    transform: rotate(-20deg);
+    left: -135%;
+  }
+  
+  @keyframes wingTopFlap1 {
+    0%, 100% { transform: rotate(-12deg) rotate3d(0, 0, 0, 10deg); }
+    50% { transform: rotate(-12deg) rotate3d(0, 1, 0, 10deg); }
+  }
+  
+  @keyframes wingTopFlap2 {
+    0%, 100% { transform: scaleX(-1) rotate(-12deg) rotate3d(0, 0, 0, 10deg); }
+    50% { transform: scaleX(-1) rotate(-12deg) rotate3d(0, 1, 0, 10deg); }
+  }
+  
+  .wing-top {
+    top: 5%;
+    width: 50%;
+    height: 45%;
+    left: -0.125%;
+    background: linear-gradient(darkorange, orange);
+    border-radius: 20% 100% 10% 80%;
+    transform-origin: right bottom;
+    transform: rotate(-12deg);
+    box-shadow: 
+      inset 3.5vmin 1.5vmin 0 1vmin,
+      inset -0.5vmin 0 0 1vmin;
+    animation: wingTopFlap1 2s linear infinite;
+    overflow: hidden;
+  }
+  
+  .wing-top::after {
+    width: 120%;
+    height: 90%;
+    border-radius: 50%;
+    transform: rotate(35deg);
+    left: 30%;
+    top: -5%;
+    box-shadow: inset 1vmin -2vmin;
+  }
+  
+  .wing-top::before {
+    width: 64%;
+    height: 25%;
+    transform: rotate(0deg);
+    top: 61.5%;
+    border-radius: 50% 50% 40% 60%;
+    box-shadow: -1vmin -0.25vmin 0 1.5vmin;
+  }
+  
+  .wing-top ~ .wing-top {
+    left: 0;
+    transform: scaleX(-1) rotate(-12deg);
+    animation: wingTopFlap2 2s linear infinite;
+  }
+  
+  .dots {
+    width: 2vmin;
+    height: 2vmin;
+    background: white;
+    color: white;
+    left: 5%;
+    top: 10%;
+    box-shadow: -0.5vmin 3vmin,
+      -0.5vmin 6vmin 0 0.125vmin,
+      1.5vmin -2.25vmin orange,
+      3.5vmin -3vmin 0 -0.5vmin,
+      20vmin 7vmin 0 2vmin black,
+      20vmin 7.25vmin 0 3vmin
+  }
+  
+  @keyframes wingBottomFlap1 {
+    0%, 100% { transform: rotate(55deg) rotate3d(0, 0, 0, 10deg); }
+    50% { transform: rotate(55deg) rotate3d(0, 1, 0, 10deg); }
+  }
+  
+  @keyframes wingBottomFlap2 {
+    0%, 100% { transform: scaleX(-1) rotate(55deg) rotate3d(0, 0, 0, 10deg); }
+    50% { transform: scaleX(-1) rotate(55deg) rotate3d(0, 1, 0, 10deg); }
+  }
+  
+  .wing-bottom {
+    width: 28%;
+    height: 40%;
+    background: linear-gradient(95deg, darkorange, orange);
+    border-radius: 100% / 125% 125% 70% 50%;
+    transform-origin: right top;
+    transform: rotate(55deg);
+    top: 59%;
+    left: 27.5%;
+    box-shadow: inset 1vmin -2vmin 0 0.5vmin;
+    animation: wingBottomFlap1 2s linear infinite;
+    overflow: hidden;
+  }
+  
+  .wing-bottom ~ .wing-bottom {
+    transform: scaleX(-1) rotate(55deg);
+    left: auto;
+    right: 55.5%;
+    animation: wingBottomFlap2 2s linear infinite;
+  }
+  
+  .wing-bottom::before {
+    width: 100%;
+    height: 100%;
+    left: 55%;
+    top: -30%;
+    border-radius: 50%;
+    box-shadow: -1vmin 0.5vmin,
+      -3vmin 2vmin 0 1vmin orange,
+      -3vmin 3vmin 0 1.5vmin
+  }
+  
+  .wing-bottom::after {
+    width: 3vmin;
+    height: 3vmin;
+    background: black;
+    top: 70%;
+    left: 15%;
+    border-radius: 50%;
+    box-shadow: 
+      2vmin 2vmin 0 -0.5vmin, 
+      2.75vmin -0.5vmin 0 -0.5vmin white,
+      4.25vmin 1.5vmin 0 -0.75vmin red,
+      11vmin -10vmin 0 1vmin,
+      15vmin -12vmin 0 -0.5vmin white;
+  }
+  .character {
+    position: absolute;
+    top: 170px;
+    left: 150px;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+  }
+  
+  .character div {
+    position: absolute;
+    box-sizing: border-box;
+  }
+  
+  .p {
+    border: 0.5vmin solid;
+  }
+  
+  .s {
+    border-radius: 100%;
+  }
+  
+  .hp::before,
+  .hq::after {
+    content: "";
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+  }
+  
+  /****/
+  .character {
+    --being: #630;
+  }
+  
+  .signal, 
+  .being {
+    width: 4%;
+    height: 4%;
+    background: var(--being);
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .being::before {
+    width: 60%;
+    height: 1000%;
+    background: var(--being);
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 50%;
+  }
+  
+  .being::after {
+    width: 150%;
+    height: 400%;
+    background: var(--being);
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 50%;
+  }
+  
+  .signal {
+    box-shadow: 
+      -4.1vmin -9.1vmin 0 -1vmin var(--being),
+      4.1vmin -9.1vmin 0 -1vmin var(--being);
+  }
+  
+  .signal::after,
+  .signal::before {
+    width: 150%;
+    height: 350%;
+    border-radius: 50%;
+    left: 80%;
+    bottom: 20%;
+    border: 0.25vmin solid transparent;
+    border-left: 0.5vmin solid var(--being);
+    transform: rotate(20deg);
+  }
+  
+  .signal::after {
+    border-left: 0.5vmin solid transparent;
+    border-right: 0.5vmin solid var(--being);
+    transform: rotate(-20deg);
+    left: -135%;
+  }
+  
+  @keyframes flapperupperFlap1 {
+    0%, 100% { transform: rotate(-12deg) rotate3d(0, 0, 0, 10deg); }
+    50% { transform: rotate(-12deg) rotate3d(0, 1, 0, 10deg); }
+  }
+  
+  @keyframes flapperupperFlap2 {
+    0%, 100% { transform: scaleX(-1) rotate(-12deg) rotate3d(0, 0, 0, 10deg); }
+    50% { transform: scaleX(-1) rotate(-12deg) rotate3d(0, 1, 0, 10deg); }
+  }
+  
+  .flapper-upper {
+    top: 5%;
+    width: 50%;
+    height: 45%;
+    left: -0.125%;
+    background: linear-gradient(darkorange, orange);
+    border-radius: 20% 100% 10% 80%;
+    transform-origin: right bottom;
+    transform: rotate(-12deg);
+    box-shadow: 
+      inset 3.5vmin 1.5vmin 0 1vmin,
+      inset -0.5vmin 0 0 1vmin;
+    animation: flapperupperFlap1 2s linear infinite;
+    overflow: hidden;
+  }
+  
+  .flapper-upper::after {
+    width: 120%;
+    height: 90%;
+    border-radius: 50%;
+    transform: rotate(35deg);
+    left: 30%;
+    top: -5%;
+    box-shadow: inset 1vmin -2vmin;
+  }
+  
+  .flapper-upper::before {
+    width: 64%;
+    height: 25%;
+    transform: rotate(0deg);
+    top: 61.5%;
+    border-radius: 50% 50% 40% 60%;
+    box-shadow: -1vmin -0.25vmin 0 1.5vmin;
+  }
+  
+  .flapper-upper ~ .flapper-upper {
+    left: 0;
+    transform: scaleX(-1) rotate(-12deg);
+    animation: wingTopFlap2 2s linear infinite;
+  }
+  
+  .spot {
+    width: 2vmin;
+    height: 2vmin;
+    background: white;
+    color: white;
+    left: 5%;
+    top: 10%;
+    box-shadow: -0.5vmin 3vmin,
+      -0.5vmin 6vmin 0 0.125vmin,
+      1.5vmin -2.25vmin orange,
+      3.5vmin -3vmin 0 -0.5vmin,
+      20vmin 7vmin 0 2vmin black,
+      20vmin 7.25vmin 0 3vmin
+  }
+  
+  @keyframes flapperlowerFlap1 {
+    0%, 100% { transform: rotate(55deg) rotate3d(0, 0, 0, 10deg); }
+    50% { transform: rotate(55deg) rotate3d(0, 1, 0, 10deg); }
+  }
+  
+  @keyframes flapperlowerFlap2 {
+    0%, 100% { transform: scaleX(-1) rotate(55deg) rotate3d(0, 0, 0, 10deg); }
+    50% { transform: scaleX(-1) rotate(55deg) rotate3d(0, 1, 0, 10deg); }
+  }
+  
+  .flapper-lower {
+    width: 28%;
+    height: 40%;
+    background: linear-gradient(95deg, darkorange, orange);
+    border-radius: 100% / 125% 125% 70% 50%;
+    transform-origin: right top;
+    transform: rotate(55deg);
+    top: 59%;
+    left: 27.5%;
+    box-shadow: inset 1vmin -2vmin 0 0.5vmin;
+    animation: flapperlowerFlap1 2s linear infinite;
+    overflow: hidden;
+  }
+  
+  .flapper-lower ~ .flapper-lower {
+    transform: scaleX(-1) rotate(55deg);
+    left: auto;
+    right: 55.5%;
+    animation: flapperlowerFlap2 2s linear infinite;
+  }
+  
+  .flapper-lower::before {
+    width: 100%;
+    height: 100%;
+    left: 55%;
+    top: -30%;
+    border-radius: 50%;
+    box-shadow: -1vmin 0.5vmin,
+      -3vmin 2vmin 0 1vmin orange,
+      -3vmin 3vmin 0 1.5vmin
+  }
+  
+  .flapper-lower::after {
+    width: 3vmin;
+    height: 3vmin;
+    background: black;
+    top: 70%;
+    left: 15%;
+    border-radius: 50%;
+    box-shadow: 
+      2vmin 2vmin 0 -0.5vmin, 
+      2.75vmin -0.5vmin 0 -0.5vmin white,
+      4.25vmin 1.5vmin 0 -0.75vmin red,
+      11vmin -10vmin 0 1vmin,
+      15vmin -12vmin 0 -0.5vmin white;
+  }
+  .flower__head {
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    background: var(--main-flower);
+    margin-top: 50px;
+  }
+  
+  .flower__head::after, .flower__head::before {
+    content: '';
+    position: absolute;
+    background: var(--main-flower);
+    border-radius: 20px;
+    width: 120px;
+    height: 40px;
+    transform: rotate(60deg);
+  }
+  
+  .flower__head::before {
+    transform: rotate(-60deg);
+  }
+  .flower{
+          width:0;
+          height:0;
+          position: absolute;
+          top:58%;
+          left:45%;
+          
+      }
+      .flower .petal{
+      width: 20px;
+      height: 20px;
+      border:solid black 1px;
+      position: absolute;
+    
+    
+      transform-origin:0px 0px;
+      border-radius:0 80% 8% 80%;
+        background-image:linear-gradient( to bottom left, transparent 40% , rgba(0,0,0,0.1) 49%, rgba(0,0,0,0.12) 50%, rgba(0,0,0,0.1) 51% , transparent 60% ),
+            linear-gradient( to bottom right, rgba(0,0,0,0.4), transparent 50%,rgba(255,255,255,0.1) 80%, rgba(0,0,0,0.4) 100% ),
+          linear-gradient( to bottom right , #f00 20% ,  #00f 70%  );
+          box-shadow: 0px 0px 32px rgba(0,0,0,0.6) inset;
+      }
+      .flower .petal:nth-child(1){
+          transform: rotate(-45deg) ;
+      }
+      .flower .petal:nth-child(2){
+          transform: rotate(45deg) ;
+      }
+      .flower .petal:nth-child(3){
+          transform: rotate(135deg);
+      }
+      .flower .petal:nth-child(4){
+          transform: rotate(225deg) ;
+      }
+  
+  
+      .smallflower{
+          transform:scale(0.75) rotate(45deg);
+      }
+      .cercle{
+          height: 10px;
+          width: 10px;
+          background-image:radial-gradient(rgba(0,0,0,0.05),transparent,rgba(0,0,0,0.8)80%,black 95%) ,radial-gradient(#fa0,#ff0);
+          border-radius: 50%;
+          box-shadow: 0 0 8px black;
+          position: absolute;
+          left:-4px;
+          top:-3px;
+          z-index: 100;
+    }
+   </style>
+    
+</head>
+<body>
+    <div class="heart"> 
+        <h2 class="ribbon"> <strong class="ribbon-content">NZURI PETALS ACADEMY</h2>
+       
+       
+        <div class="sun">
+            <div class="sun-face">
+                <div class="sun-hlight"></div>
+                <div class="sun-leye"></div>
+                <div class="sun-reye"></div>
+                <div class="sun-lred"></div>
+                <div class="sun-rred"></div>
+                <div class="sun-nose"></div>
+            </div>
+            <div class="sun-anime">
+            <div class="sun-ball"></div>
+            <div class="sun-light">
+                <b></b>
+                <s></s>
+            </div>
+            <div class="sun-light">
+                <b></b>
+                <s></s>
+            </div>
+            <div class="sun-light">
+                <b></b>
+                <s></s>
+            </div>
+            <div class="sun-light">
+                <b></b>
+                <s></s>
+            </div>
+            <div class="sun-light">
+                <b></b>
+                <s></s>
+            </div>
+            <div class="sun-light">
+                <b></b>
+                <s></s>
+            </div>
+            <div class="sun-light">
+                <b></b>
+                <s></s>
+            </div>
+            <div class="sun-light">
+                <b></b>
+                <s></s>
+            </div>
+            <div class="sun-light">
+                <b></b>
+                <s></s>
+            </div>
+            <div class="sun-light">
+                <b></b>
+                <s></s>
+            </div>
+            <div class="sun-light">
+                <b></b>
+                <s></s>
+            </div>
+            <div class="sun-light">
+                <b></b>
+                <s></s>
+            </div>
+        </div>
+    </div> 
+    <div class="book">
+        <span class="page turn"></span>
+        <span class="page turn"></span>
+        <span class="page turn"></span>
+        <span class="page turn"></span>
+        <span class="page turn"></span>
+        <span class="page turn"></span>
+        <span class="cover"></span>
+        <span class="page"></span>
+        <span class="cover turn"></span>
+      </div>
+      <div class="character hp">
+        <div class="flapper-upper hq hp"></div>
+        <div class="flapper-upper hq hp">
+          <div class="spot s"></div>
+        </div>
+        <div class="flapper-bottom hq hp"></div>
+        <div class="flapper-upper hq hp">
+          <div class="spot s"></div>
+        </div>
+        <div class="being s hq hp"></div>
+        <div class="signal s hq hp"></div>
+      </div>
+    
+       <i class="fa fa-graduation-cap" style="position: absolute;top:145px; left: 45px;transform: rotate(180deg);font-size: 55px;color: black;"></i>
+    
+       <br>
+       <div class="cartoon hb">
+        <div class="wing-bottom ha hb"></div>
+        <div class="wing-top ha hb">
+          <div class="dots r"></div>
+        </div>
+        <div class="wing-bottom ha hb"></div>
+        <div class="wing-top ha hb">
+          <div class="dots r"></div>
+        </div>
+        <div class="body r ha hb"></div>
+        <div class="antenna r ha hb"></div>
+      </div>
+      <div class="contener">
+        <div class="flower">
+            <div class ="petal">
+            </div>
+            <div class ="petal">
+            </div>
+            <div class ="petal">
+            </div>
+            <div class ="petal">
+            </div>
+            <div class="cercle">
+            </div>
+        </div>
+        <div class="flower smallflower">
+            <div class ="petal">
+            </div>
+            <div class ="petal">
+            </div>
+            <div class ="petal">
+            </div>
+            <div class ="petal">
+            </div>
+        </div>
+      <br>
+        <h2 class="lower"> <strong class="lower-content">SUCCESS TO THE UPPER MOST LEVEL</h2>
+        </div>       
+      </div>
+    </div>
+    <BR></BR>
+    
+    
+<h1>About Nzuri Petals Academy</h1> 
+<p>Nzuri Petals Academy (NPA) was officially opened on 13<sup>th</sup>February 2003 with 3 classes about the headmaster's office.
+Today,we have over 400 students and 15 teaching staff and the school is made up of 12 classes with class 6,7 and 8 containing
+two streams.The environment is expansive with mature trees around the school itself, a dedicated sports turf and 
+multiple play areas.The school is within a community yet immune from any disturbances that may affect the well-being 
+of the pupils</p>
+<br>
+<img src="./slides/2.jpg"  width="800px">
+<br>
+<p>Our committed team of teachers.learning assistants and administrative staff go above and beyond in providing learning
+    experience for the children.They are passionate about Education and learning and are constantly upskilling
+</p>
+<br>
+<img src="./slides/3.jpg" width="800px" >
+
+<br>
+<p>There is a strong focus on reading ,writing and mathematics in NPA,demonstated by high levels of progress and acheivement across the 
+    school.We also believe the arts have an important place in learning with visual arts,music,dance,and drama key 
+    features of the school
+</p> 
+<br>    <img src="./slides/4.jpg" width="800px" >
+
+<br>
+<p>At NPA we recognise the importance of the strong Parent-school partnership and the value of each of our roles
+    being strenghtened when we work together in the best interest of the children.We are fortunate to have a strong base of parental 
+support in our school and there are many opportunities throughout the year that parents and the school are welcome to be involved in.</p>  
+
+<img src="./slides/5.jpg" width="800px">
+<BR></BR>
+<h2 style="text-decoration: none;">QUICK LINKS</h2>
+<br>
+<a href="home.html">Home </a>
+<BR></BR>
+<a href="how to enroll.html">How to enroll</a>
+<BR></BR>
+<a href="Contact us.html">Contact information</a>
+<BR></BR>
+<a href="index.html">back to index page</a>
+</body>
+</html>
